@@ -13,3 +13,5 @@ if(num>20){
 }
 console.log("FIM DO PROGRAMA");
 console.log("informe uma letra");
+
+//comentário realizado 17/06/26
