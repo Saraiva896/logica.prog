@@ -12,3 +12,4 @@ if(num>20){
     console.log(`O numero inserido foi ${num}`);
 }
 console.log("FIM DO PROGRAMA");
+console.log("informe uma letra");
