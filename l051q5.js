@@ -9,4 +9,13 @@ Considerando como exemplo o fornecimento do número 2
 (...)
 2 . 10 = 20 */
 
-let 
+let cont = 2;
+result = 2;
+
+while(cont <= 20){
+    console.log(`Os resultados da tabela são: ${result} x ${cont} = ${final}`);
+    final = result * cont;
+    cont = cont + 2;
+}
+
+// esse exercicio nao foi terminado!!!
