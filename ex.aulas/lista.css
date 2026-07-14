@@ -1,0 +1,5 @@
+ul li {
+    /* display block */
+    margin-right: 16px;
+    display: inline-block;
+}
