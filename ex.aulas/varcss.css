@@ -1,0 +1,91 @@
+:root {
+ --primary-color: #1e90ff;
+ --secondary-color: #e3f2fd;
+ --dark-color: #222;
+ --text-color: #333;
+ --bg-color: #f4f4f4;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.produto-card {
+    background-color: white;
+    border: 2px solid #0570b5;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease forwards; 
+    /* primeiro numero: vertical
+       segundo numero: horizontal
+       terceiro numero: embaçamento 
+       */
+}
+
+.badge-novo {
+    background-color: #51c8e6;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    animation: pulso 1.5s ease-in-out infinite;
+}
+
+h2 {
+    color: #333333;
+}
+
+p {
+    color: #666666;
+}
+
+.btn-comprar {
+    background-color: #0570b5;
+    
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #02294d;
+    transform: scale(1.05);
+}
+
+/* Declarar a animação (pode ser no final do arquivo) */
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* Declarar a animação */
+@keyframes pulso {
+0%, 100% { 
+    transform: scale(1); 
+}
+50% { 
+    transform: scale(1.08); 
+}
+}

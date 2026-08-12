@@ -1,0 +1,163 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base mobile-first */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #1e90ff;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Menu */
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-menu li {
+    margin: 5px 10px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Espaço do cabeçalho */
+main {
+    margin-top: 100px;
+}
+
+/* Banner */
+.banner {
+    background-color: #e3f2fd;
+    padding: 50px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Produtos */
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Card */
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+}
+
+/* Imagens */
+.product-card img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Seções */
+.about,
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.about iframe,
+.about video {
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Formulário */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b74da;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
